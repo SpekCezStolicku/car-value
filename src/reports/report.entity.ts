@@ -19,4 +19,10 @@ export class Report {
 
   @Column()
   mileage: number;
+
+  @Column()
+  lng: number;
+
+  @Column()
+  lat: number;
 }
