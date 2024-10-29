@@ -20,6 +20,7 @@ export class ReportsService {
       .andWhere('lat - :lat BETWEEN -5 AND 5', { lat })
       .andWhere('year - :year BETWEEN -3 AND 3', { year })
       .andWhere('mileage - :mileage BETWEEN -50000 AND 50000', { mileage })
+      .limit(3)
       .getRawOne();
   }
 
